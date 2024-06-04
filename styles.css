@@ -115,3 +115,31 @@ section {
 .right-button {
 	right: 0;
 }
+
+#contact {
+	background-color: #fff;
+	padding: 50px 0;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 20px;
+	color: #333;
+}
+
+form {
+	background: #fafafa;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+	margin-bottom: 15px;
+}
