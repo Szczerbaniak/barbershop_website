@@ -66,3 +66,52 @@ body {
 		transform: translateY(-5px);
 	}
 }
+
+section {
+	padding: 100px 20px;
+	margin-top: 100px;
+}
+
+.slider {
+	position: relative;
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+	border: 1px solid #ddd;
+}
+
+.slider-container {
+	width: 100%;
+	overflow: hidden;
+}
+
+.slider-track {
+	display: flex;
+	transition: transform 0.5s ease;
+	width: 200%; /* Ensure the track is wide enough to show all images in sequence */
+}
+
+.slider-track img {
+	width: 25%; /* Each image takes up 25% of the container to show 4 images at a time */
+}
+
+.slider-button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	border: none;
+	font-size: 24px;
+	padding: 10px;
+	cursor: pointer;
+	z-index: 1001;
+}
+
+.left-button {
+	left: 0;
+}
+
+.right-button {
+	right: 0;
+}
