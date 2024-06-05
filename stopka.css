@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+}
+
+footer {
+    background-color: #000; 
+    color: #b28f5c; 
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.opening-hours, .contact-info, .map {
+    flex: 1;
+}
+
+.opening-hours h4, .contact-info p:first-child {
+    margin-top: 0;
+    color: #fff; 
+}
+
+.opening-hours p, .contact-info p {
+    margin: 5px 0;
+    color:#fffff0; 
+
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info p {
+    margin: 0 15px 0 0; 
+}
+
+.map {
+    text-align: center;
+    padding: 20px;
+    margin-left: 20px;
+    color: #000;
+}
+
+
+.map p {
+    margin: 0;
+}
