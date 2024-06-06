@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hairdressing Services & Prices</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10px;
+            background-color: hsl(0, 0%, 0%);
+            
+        }
+        header {
+            text-align: center;
+            padding: 1px;
+            background-color: #333;
+            color: #fff;
+        }
+        .containerP {
+            width: 48%;
+            float: right;
+            margin: 0 ;
+        
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .containerL {
+            width: 48%;
+            float: left;
+            margin: 0 ;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+
+        h1, h2 {
+            color: #ffffff;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+            color:#848484;
+        }
+  
+        th, td {
+            padding: 10px;
+            text-align: left;
+            
+        }
+        tr {
+            background-color: #101010;
+        }
+
+    </style><script>
+        kolor=new Array(
+"#848484",
+"#969696",
+"#A1A1A1",
+"#BDBDBD",
+"#DCDCDC",
+"#E6E6E6",
+"#ECECEC",
+"#F3F3F3",
+"#FFFFFF"
+);
+
+
+
+function start(l) {
+  i=0; o=l; stary=o.style.color;
+  kolory();
+}
+
+function stop() {
+  i=11000; o.style.color=stary;
+}
+
+function kolory() {
+  o.style.color=kolor[i]; i++;
+  if (i<kolor.length) setTimeout("kolory()",100);
+}
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Hairdressing Services & Prices</h1>
+    </header> 
+    <div class="containerL">
+        <section>
+            <h2>Haircuts & Styling</h2>
+            <table onmouseout="stop()" onmouseover="start(this)" >
+                <tr >
+                    <th>Service</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Women's Haircut & Style</td>
+                    <td>?</td>
+                </tr>
+                <tr>
+                    <td>Men's Haircut</td>
+                    <td>?</td>
+                </tr>
+                <tr>
+                    <td>Children's Haircut (Under 12)</td>
+                    <td>?</td>
+                </tr>
+                <tr>
+                    <td>Bang Trim</td>
+                    <td>?</td>
+                </tr>
+                <tr>
+                    <td>Blowout</td>
+                    <td>?</td>
+                </tr>
+                <tr>
+                    <td>Special Occasion Updo</td>
+                    <td>?</td>
+                </tr>
+            </table>
+        </section>
+</div>
+<div class="containerP">
+        <section>
+            <h2>Coloring Services</h2>
+            <table onmouseout="stop()" onmouseover="start(this)">
+                <tr>
+                    <th>Service</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Single Process Color</td>
+                    <td>?</td>
+                </tr>
+                <tr>
+                    <td>Partial Highlights</td>
+                    <td>?</td>
+                </tr>
+                <tr>
+                    <td>Full Highlights</td>
+                    <td>?</td>
+                </tr>
+                <tr>
+                    <td>Balayage/Ombre</td>
+                    <td>?</td>
+                </tr>
+                <tr>
+                    <td>Color Correction</td>
+                    <td>Price upon consultation</td>
+                </tr>
+                <tr>
+                    <td>Toner/Gloss</td>
+                    <td>?</td>
+                </tr>
+            </table>
+        </section>
+
+        </div>
+       
+        <div class="containerL">
+
+   
+</body>
+</html>
