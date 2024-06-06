@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hairdressing Services & Prices</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10px;
+            background-color: hsl(0, 0%, 79%);
+            
+        }
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+        .container {
+            width: 48%;
+            float: right;
+            margin: 0 ;
+            background: #837f7f;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .container1 {
+            width: 48%;
+            float: left;
+            margin: 0 ;
+            background: #837f7f;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .container2 {
+            width: 48%;
+            
+            margin: 0 ;
+            float: right;
+            background: #837f7f;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .container3 {
+            width: 48%;
+            float: left;
+            margin: 0 ;
+            background: #837f7f;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .container4 {
+            width: 48%;
+            float: right;
+            margin: 0 ;
+            background: #837f7f;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .container5 {
+            width: 48%;
+            float: left;
+            margin: 0 ;
+            background: #837f7f;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            color: #ffffff;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+            color:#717171;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            
+        }
+        tr {
+            background-color: #eee5e5;
+        }
+
+    </style><script>
+        kolor=new Array(
+"#5A5A5A",
+"#4F4F4F",
+"#434343",
+"#3D3D3D",
+"#363636",
+"#2A2A2A",
+"#1F1F1F",
+"#191919",
+"#000000"
+);
+tytulkolor= new Array(
+"#FFCDD2",
+"#EF9A9A",
+"#E57373",
+"#EF5350",
+"#F44336",
+"#E53935",
+"#D32F2F",
+"#C62828",
+"#B71C1C"
+);
+
+
+function start(l) {
+  i=0; o=l; stary=o.style.color;
+  kolory();
+}
+
+function stop() {
+  i=11000; o.style.color=stary;
+}
+
+function kolory() {
+  o.style.color=kolor[i]; i++;
+  if (i<kolor.length) setTimeout("kolory()",100);
+}
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Hairdressing Services & Prices</h1>
+    </header> 
+    <div class="container">
+        <section>
+            <h2>Haircuts & Styling</h2>
+            <table onmouseout="stop()" onmouseover="start(this)" >
+                <tr >
+                    <th>Service</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Women's Haircut & Style</td>
+                    <td>?</td>
+                </tr>
+                <tr>
+                    <td>Men's Haircut</td>
+                    <td>?</td>
+                </tr>
+                <tr>
+                    <td>Children's Haircut (Under 12)</td>
+                    <td>?</td>
+                </tr>
+                <tr>
+                    <td>Bang Trim</td>
+                    <td>?</td>
+                </tr>
+                <tr>
+                    <td>Blowout</td>
+                    <td>?</td>
+                </tr>
+                <tr>
+                    <td>Special Occasion Updo</td>
+                    <td>?</td>
+                </tr>
+            </table>
+        </section>
+</div>
+<div class="container1">
+        <section>
+            <h2>Coloring Services</h2>
+            <table onmouseout="stop()" onmouseover="start(this)">
+                <tr>
+                    <th>Service</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Single Process Color</td>
+                    <td>?</td>
+                </tr>
+                <tr>
+                    <td>Partial Highlights</td>
+                    <td>?</td>
+                </tr>
+                <tr>
+                    <td>Full Highlights</td>
+                    <td>?</td>
+                </tr>
+                <tr>
+                    <td>Balayage/Ombre</td>
+                    <td>?</td>
+                </tr>
+                <tr>
+                    <td>Color Correction</td>
+                    <td>Price upon consultation</td>
+                </tr>
+                <tr>
+                    <td>Toner/Gloss</td>
+                    <td>?</td>
+                </tr>
+            </table>
+        </section>
+
+        </div>
+       
+        <div class="container2">
+        <section>
+            <h2>Treatments</h2>
+            <table onmouseout="stop()" onmouseover="start(this)">
+                <tr>
+                    <th>Service</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Deep Conditioning Treatment</td>
+                    <td>?</td>
+                </tr>
+                <tr>
+                    <td>Olaplex Treatment</td>
+                    <td>?</td>
+                </tr>
+                <tr>
+                    <td>Keratin Treatment</td>
+                    <td>?</td>
+                </tr>
+                <tr>
+                    <td>Scalp Treatment</td>
+                    <td>?</td>
+                </tr>
+            </table>
+        </section>
+</div>
+        <div class="container3">
+        <section>
+            <h2>Texture Services</h2>
+            <table onmouseout="stop()" onmouseover="start(this)">
+                <tr>
+                    <th>Service</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Perm</td>
+                    <td>?</td>
+                </tr>
+                <tr>
+                    <td>Relaxer</td>
+                    <td>?</td>
+                </tr>
+                <tr>
+                    <td>Brazilian Blowout</td>
+                    <td>?</td>
+                </tr>
+            </table>
+        </section>
+</div>
+<div class="container5">
+        <section>
+            <h2>Extensions</h2>
+            <p>Price upon consultation</p>
+            <ul>
+                <li>Tape-In  Extensions</li>
+                <li>Sew-In Extensions</li>
+                <li>Micro-Link Extensions</li>
+            </ul>
+        </section>
+        </div>
+<div class="container4">
+        <section>
+            <h2>Additional Services</h2>
+            <table onmouseout="stop()" onmouseover="start(this)">
+                <tr>
+                    <th>Service</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Hair Consultation</td>
+                    <td>?</td>
+                </tr>
+                <tr>
+                    <td>Beard Trim & Maintenance</td>
+                    <td>?</td>
+                </tr>
+                <tr>
+                    <td>Hair Extensions Removal</td>
+                    <td>?</td>
+                </tr>
+            </table>
+        </section>
+
+</div>
+   
+</body>
+</html>
